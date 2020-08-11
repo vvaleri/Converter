@@ -4,7 +4,7 @@ function conv() {
     const url2 = "https://www.cbr-xml-daily.ru/daily_json.js";
     const url = proxyurl + url2;
 
-    fetch(url, {cache: 'no-cache'})   
+    fetch(url)   
     .then(data => data.json())
     .then(function(data){
 
@@ -57,7 +57,6 @@ function conv() {
         some.style.color = 'red';
         some.style.fontSize = '16px';
         console.log(error.message)
-    
     } )       
 }
 
