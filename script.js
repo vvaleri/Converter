@@ -4,7 +4,7 @@ function conv() {
     const url2 = "https://www.cbr-xml-daily.ru/daily_json.js";
     const url = proxyurl + url2;
 
-    fetch(url)   
+    fetch(url, {cache: 'no-cache'})   
     .then(data => data.json())
     .then(function(data){
 
@@ -50,8 +50,15 @@ function conv() {
             }
         }
              conResult()
-        
-    })       
+    })
+    .catch(function(error) {
+        let some = document.querySelector('.result__inner')
+        some.textContent = 'Что-то пошло не так. Пожалуйста, повторите попытку';
+        some.style.color = 'red';
+        some.style.fontSize = '16px';
+        console.log(error.message)
+    
+    } )       
 }
 
   document.querySelector('#number').addEventListener('input', conv);
