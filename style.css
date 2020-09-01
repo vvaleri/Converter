@@ -71,7 +71,8 @@ margin-left: 10px;
 }
 
 .convert__status {
-  display: none;
+  /* display: none; */
+  display: block;
   position: absolute;
   border-radius: 50%; 
   border: 2px solid #ddd5d5;
@@ -129,7 +130,7 @@ margin-left: 10px;
     }
 
     .convert__status {
-      top: 90%; 
+      top: 80%; 
     }
 }
 
