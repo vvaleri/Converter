@@ -70,6 +70,34 @@ select option:focus {
 margin-left: 10px;
 }
 
+.convert__status {
+  display: none;
+  position: absolute;
+  border-radius: 50%; 
+  border: 2px solid #ddd5d5;
+  width:30px;
+   height:30px;
+   border-left: 2px solid #ffffff;
+   left: 50%;
+   top: 50%;
+    animation: circle linear 3s infinite;
+}
+
+.convert__status.active {
+  display: block;
+}
+
+
+@keyframes circle {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+     transform:rotate(360deg);
+  }
+}
+
+
 @media (max-width: 768px) {
   .convert__inner {
     flex-wrap: wrap;
@@ -78,6 +106,16 @@ margin-left: 10px;
 
   .convert__box {
     padding: 30px;
+  }
+
+  .convert__status {
+    left: 47%;
+  }
+}
+
+@media (max-width: 715px) {
+  .convert__status {
+      top: 100%;  
   }
 }
 
@@ -89,4 +127,9 @@ margin-left: 10px;
   .title {
     font-size: 30px;
     }
+
+    .convert__status {
+      top: 90%; 
+    }
 }
+
