@@ -71,8 +71,7 @@ margin-left: 10px;
 }
 
 .convert__status {
-  /* display: none; */
-  display: block;
+  display: none;
   position: absolute;
   border-radius: 50%; 
   border: 2px solid #ddd5d5;
@@ -80,7 +79,7 @@ margin-left: 10px;
    height:30px;
    border-left: 2px solid #ffffff;
    left: 50%;
-   top: 50%;
+   top: 35%;
     animation: circle linear 3s infinite;
 }
 
@@ -98,6 +97,11 @@ margin-left: 10px;
   }
 }
 
+@media (max-width: 1024px) {
+  .convert__status {
+    top: 40%;
+  }
+}
 
 @media (max-width: 768px) {
   .convert__inner {
@@ -110,13 +114,13 @@ margin-left: 10px;
   }
 
   .convert__status {
-    left: 47%;
+    left: 48%;
   }
 }
 
 @media (max-width: 715px) {
   .convert__status {
-      top: 100%;  
+       top: 65%;  
   }
 }
 
@@ -130,7 +134,7 @@ margin-left: 10px;
     }
 
     .convert__status {
-      top: 80%; 
+      top: 55%; 
     }
 }
 
