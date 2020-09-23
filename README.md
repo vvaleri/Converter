@@ -1,5 +1,5 @@
-# Converter
+# converter
 
 конвертер валют
 
-https://vvaleri.github.io/Converter/
+https://vvaleri.github.io/converter/
