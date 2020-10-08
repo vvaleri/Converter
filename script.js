@@ -64,7 +64,7 @@
                   result.innerText = convertRubUsd;
               } else
                   if (firstSelect.value == 'RUB' && secondSelect.value == 'EUR') {
-                  result.innerTex = convertRubEur;
+                  result.innerText = convertRubEur;
             }
         }
      
