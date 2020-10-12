@@ -71,7 +71,7 @@
                   if (firstSelect.value == 'EUR' && secondSelect.value == 'USD') {
                   result.innerText = convertEurUsd;
             } else
-                  if (firstSelect.value == 'EUR' && secondSelect.value == 'USD') {
+                  if (firstSelect.value == 'USD' && secondSelect.value == 'EUR') {
                   result.innerText = convertUsdEur;
         }
       }
