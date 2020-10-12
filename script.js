@@ -70,6 +70,7 @@
                   if (firstSelect.value == 'EUR' && secondSelect.value == 'USD') {
                   result.innerText = convertEurUsd;
         }
+      }
      
         convertResult()
     }
