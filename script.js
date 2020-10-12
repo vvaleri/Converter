@@ -49,7 +49,8 @@
                 convertInEur = Math.floor((eur * currentNumber.value)*100) / 100,
                 convertRubUsd = Math.floor((rub * currentNumber.value / usd)*100) / 100,
                 convertRubEur = Math.floor((rub * currentNumber.value / eur)*100) / 100,
-                convertEurUsd = Math.floor((eur * currentNumber.value / usd)*100) / 100;
+                convertEurUsd = Math.floor((eur * currentNumber.value / usd)*100) / 100,
+                convertUsdEur = Math.floor((usd * currentNumber.value / eur)*100) / 100;
   
             
               if (firstSelect.value == 'USD' && secondSelect.value == 'RUB') {
@@ -69,6 +70,9 @@
             }  else
                   if (firstSelect.value == 'EUR' && secondSelect.value == 'USD') {
                   result.innerText = convertEurUsd;
+            } else
+                  if (firstSelect.value == 'EUR' && secondSelect.value == 'USD') {
+                  result.innerText = convertUsdEur;
         }
       }
      
