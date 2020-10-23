@@ -1,9 +1,8 @@
 # converter
 
-конвертер валют
+currency converter
 
-Доступ к API Центрального банка реализован через прокси в обход CORS.
-
-Это, безусловно, не очень хорошо, и делать так, конечно, не стоит.
+This app has simple designe. 
+Data receiving with proxy cors-anywhere. It's for only example and I don't think that it's good at all
 
 https://vvaleri.github.io/converter/
