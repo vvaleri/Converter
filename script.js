@@ -83,7 +83,7 @@
         let some = document.querySelector('.result__inner')
           some.textContent = 'Что-то пошло не так. Пожалуйста, повторите попытку';
           some.style.color = 'red';
-          some.style.fontSize = '16px';
+          some.style.fontSize = '14px';
           
     }
 }
