@@ -10,61 +10,79 @@
     max-width: 1280px;
     align-items: center;
     margin: 0 auto;
-   
   }
+
+
+svg {
+  margin: 10px 0 0 0;
+}
 
 .title {
 font-size: 40px;
-padding-top: 20px;
+margin: 20px 0;
+color: #271c1c67;
+text-shadow: 1px 1px #39ac6b,  -1px 1px #39ac6b,  3px 3px 6px rgba(0,0,0,.5);
 }
 
 .result {
-    width: 250px;
-     height: 150px;
-    border: 2px solid green;
+    width: 150px;
+    height: 60px;
     margin: 10px;
   }
 
 #number, .result__inner {
-    width: 300px;
-    height: 150px;
-    border: 1px solid grey;
+    width: 150px;
+    height: 60px;
+    border: 1px solid #246641;
     font-size: 25px;
     border-radius: 10px;
+    padding: 5px 0 5px 5px;
   }
+#number {
+  word-break: break-all;
+}
 
-input:focus {
-outline-color: grey;
+
+input:focus,
+select:focus {
+outline-color:#246641;
 }
 
 .convert__inner {
     display: flex;
-    margin: 30px 0;
+    flex-direction: column;
+    position: relative;
   }
 
 .convert__box {
     display: flex;
-    flex-direction: column;
-    padding: 50px;
+    padding: 20px;
+    align-items: center;
   }
 
 select {
-  width: 80px;
+  width: 60px;
   height: 30px;
-  margin-bottom: 10px;
+  margin: 0 10px 0 0;
+  border: 2px solid #3bb871;
+  border-radius: 5px;
 }
 
-select option:focus {
-  background-color: green;
-}
 .result__inner {
   display: flex;
   align-items: center;
-  
+  overflow: auto;
 }
+
+.result__convert {
+word-break: break-all;
+padding: 5px 0 5px 5px;
+
+}
+
 .option {
   font-size: 12px;
-  margin: 50px 10px 0 10px;
+  margin: 30px 10px 0 10px;
 }
 .sign {
 margin-left: 10px;
@@ -74,12 +92,12 @@ margin-left: 10px;
   display: none;
   position: absolute;
   border-radius: 50%; 
-  border: 2px solid #ddd5d5;
+  border: 2px solid #63e29a;
   width:30px;
    height:30px;
    border-left: 2px solid #ffffff;
-   left: 50%;
-   top: 35%;
+   left: 50px;
+   top: 85px;
     animation: circle linear 3s infinite;
 }
 
@@ -97,44 +115,9 @@ margin-left: 10px;
   }
 }
 
-@media (max-width: 1024px) {
-  .convert__status {
-    top: 40%;
-  }
-}
-
-@media (max-width: 768px) {
-  .convert__inner {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .convert__box {
-    padding: 30px;
-  }
-
-  .convert__status {
-    left: 48%;
-  }
-}
-
-@media (max-width: 715px) {
-  .convert__status {
-       top: 65%;  
-  }
-}
-
 @media (max-width: 375px) {
-  .convert__box {
-    padding: 10px;
-  }
-
   .title {
     font-size: 30px;
-    }
-
-    .convert__status {
-      top: 55%; 
     }
 }
 
