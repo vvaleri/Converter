@@ -1,7 +1,6 @@
 # converter
 
-![currency converter](https://img.shields.io/badge/-open_converter-54FF9F?link=https://vvaleri.github.io/converter)
-![currency converter](https://img.shields.io/badge/converter-open-54FF9F?style=for-the-badge?link=https://vvaleri.github.io/converter)
+[currency converter](https://vvaleri.github.io/converter) 
 
 
 This app has simple designe. 
