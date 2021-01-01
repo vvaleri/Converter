@@ -1,6 +1,4 @@
-# converter
-
-[currency converter](https://vvaleri.github.io/converter) 
+# [currency converter](https://vvaleri.github.io/converter) 
 
 
 This app has simple designe. 
