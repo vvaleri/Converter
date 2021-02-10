@@ -5,60 +5,60 @@
 }
 
 .wrapper {
-    display: flex;   
-    flex-direction: column;
-    max-width: 1280px;
-    align-items: center;
-    margin: 0 auto;
-   
-  }
+  display: flex;   
+  flex-direction: column;
+  max-width: 1280px;
+  align-items: center;
+  margin: 0 auto;
+}
+
 
 svg {
   margin: 10px 0 0 0;
 }
 
 .title {
-font-size: 40px;
-margin: 20px 0;
-color: #271c1c67;
-text-shadow: 1px 1px #39ac6b,  -1px 1px #39ac6b,  3px 3px 6px rgba(0,0,0,.5);
+  font-size: 40px;
+  margin: 20px 0;
+  color: #271c1c67;
+  text-shadow: 1px 1px #39ac6b,  -1px 1px #39ac6b,  3px 3px 6px rgba(0,0,0,.5);
 }
 
 .result {
-    width: 150px;
-    height: 60px;
-    margin: 10px;
-  }
+  width: 150px;
+  height: 60px;
+  margin: 10px;
+}
 
 #number, .result__inner {
-    width: 150px;
-    height: 60px;
-    border: 1px solid #246641;
-    font-size: 25px;
-    border-radius: 10px;
-    padding: 5px 0 5px 5px;
-  }
+  width: 150px;
+  height: 60px;
+  border: 1px solid #246641;
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 5px 0 5px 5px;
+}
+
 #number {
   word-break: break-all;
 }
 
-
 input:focus,
 select:focus {
-outline-color:#246641;
+  outline-color:#246641;
 }
 
 .convert__inner {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
 .convert__box {
-    display: flex;
-    padding: 20px;
-    align-items: center;
-  }
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
 
 select {
   width: 60px;
@@ -75,9 +75,8 @@ select {
 }
 
 .result__convert {
-word-break: break-all;
-padding: 5px 0 5px 5px;
-
+  word-break: break-all;
+  padding: 5px 0 5px 5px;
 }
 
 .option {
@@ -85,7 +84,7 @@ padding: 5px 0 5px 5px;
   margin: 30px 10px 0 10px;
 }
 .sign {
-margin-left: 10px;
+  margin-left: 10px;
 }
 
 .convert__status {
@@ -94,29 +93,28 @@ margin-left: 10px;
   border-radius: 50%; 
   border: 2px solid #63e29a;
   width:30px;
-   height:30px;
-   border-left: 2px solid #ffffff;
-   left: 50px;
-   top: 85px;
-    animation: circle linear 3s infinite;
+  height:30px;
+  border-left: 2px solid #ffffff;
+  left: 50px;
+  top: 85px;
+  animation: circle linear 3s infinite;
 }
 
 .convert__status.active {
   display: block;
 }
 
-
 @keyframes circle {
   0% {
     transform:rotate(0deg);
   }
   100% {
-     transform:rotate(360deg);
+    transform:rotate(360deg);
   }
 }
 
 @media (max-width: 375px) {
   .title {
     font-size: 30px;
-    }
+  }
 }
