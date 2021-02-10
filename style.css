@@ -46,6 +46,7 @@ svg {
 input:focus,
 select:focus {
   outline-color:#246641;
+  box-shadow: -1px 2px 8px 7px rgba(37, 112, 70, 0.2);
 }
 
 .convert__inner {
@@ -79,12 +80,8 @@ select {
   padding: 5px 0 5px 5px;
 }
 
-.option {
-  font-size: 12px;
-  margin: 30px 10px 0 10px;
-}
 .sign {
-  margin-left: 10px;
+  margin: 50px 0 0 10px;
 }
 
 .convert__status {
@@ -116,5 +113,9 @@ select {
 @media (max-width: 375px) {
   .title {
     font-size: 30px;
+  }
+
+  .sign {
+    font-size: 14px;
   }
 }
